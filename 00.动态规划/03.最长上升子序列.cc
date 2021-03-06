@@ -11,6 +11,9 @@
 
 using namespace std;
 
+// count(n) : n之前最长递增子序列，而且对n来说是递增的
+// count(n) = count(n - 1) + 1
+
 void solver(vector<int> data)
 {
     vector<int> flag = {1};

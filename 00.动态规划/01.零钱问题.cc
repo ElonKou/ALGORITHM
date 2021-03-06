@@ -19,6 +19,9 @@ typedef struct Item
 } Item;
 
 // 11, 5, 1
+// cash(n) : 凑齐n的最少数量
+// cash(n) = min(cash(n - 1) + 1, cash(n - 5) + 1, cash(b - 11) + 1)
+
 int main(int argc, char *argv[])
 {
     vector<Item> items;

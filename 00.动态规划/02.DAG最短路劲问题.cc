@@ -20,6 +20,9 @@ typedef struct Item
 
 map<char, int> path;
 
+// F(n) :到达n的最短路径长度
+// F(n) = min(F(n1) + dist[n1], F(n2) + dist[n2] , ...)
+
 int F(map<char, Item> &data, char s)
 {
     if (s == 'S')
